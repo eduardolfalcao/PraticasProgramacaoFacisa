@@ -3,15 +3,15 @@ package threads.synchronization;
 class Counter {
 	private int c = 0;
 
-	public void increment() {
+	public synchronized void increment() {
 		c++;
 	}
 
-	public void decrement() {
+	public synchronized void decrement() {
 		c--;
 	}
 
-	public int value() {
+	public synchronized int value() {
 		return c;
 	}
 
